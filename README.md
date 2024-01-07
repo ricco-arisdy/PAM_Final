@@ -11,6 +11,7 @@ pencarian dan mengetahui semua data anggota club. Aplikasi ini dikembangkan deng
 
 ### Use Case
 
+![usecase](https://github.com/ricco-arisdy/PAM_Final/assets/114916298/aecc0f51-7ecf-4887-9459-f2fef01e62dd)
 
 * Read Data (Melihat Semua Data): Admin dapat melihat daftar lengkap semua data anggota yang tersedia yang sudah terdaftar.
 * Add new Data (Menambahkan Anggota Baru): Admin dapat menambahkan Anggota baru.
