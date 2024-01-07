@@ -20,5 +20,5 @@ pencarian dan mengetahui semua data anggota club. Aplikasi ini dikembangkan deng
 
 #### Pembagian Tugas
 
-Ricco: Read, Aadd, Search data
-Ahmad: Edit, Delete, Database
+*Ricco: Read, Add, Search data
+*Ahmad: Edit, Delete, Database
