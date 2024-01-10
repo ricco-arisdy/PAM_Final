@@ -24,3 +24,20 @@ fun DetailKontak.toKontak(): Kontak = Kontak(
 data class DetailUIState(
     val addEvent: DetailKontak = DetailKontak(),
 )
+
+fun Kontak.toDetailKontak(): DetailKontak =
+    DetailKontak(
+        id = id,
+        nama = nama,
+        alamat = alamat,
+        telpon = telepon
+    )
+
+fun Kontak.toUiStateKontak(): UIStateKontak = UIStateKontak(
+    detailKontak = this.toDetailKontak()
+)
+
+data class HomeUIState(
+    val listKontak: List<Kontak> = listOf(),
+    val dataLength: Int = 0
+)
