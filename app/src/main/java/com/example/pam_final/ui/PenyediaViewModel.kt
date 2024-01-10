@@ -7,6 +7,7 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.pam_final.KontakApplication
 import com.example.pam_final.ui.add.AddViewModel
+import com.example.pam_final.ui.home.HomeViewModel
 
 fun CreationExtras.aplikasiKontak(): KontakApplication =
     (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as KontakApplication)
@@ -17,7 +18,9 @@ object PenyediaViewModel {
         initializer {
             AddViewModel(aplikasiKontak().container.kontakRepository)
         }
-
+        initializer {
+            HomeViewModel(aplikasiKontak().container.kontakRepository)
+        }
 
     }
 }
