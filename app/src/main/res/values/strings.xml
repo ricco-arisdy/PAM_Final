@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PAM_Final</string>
+    <string name="entry_kontak">Tambah Kontak</string>
+    <string name="deskripsi_no_item">Tidak ada data Kontak. Tap + untuk menambah data</string>
+    <string name="nama">Nama Kontak</string>
+    <string name="alamat">Alamat Kontak</string>
+    <string name="telpon">Telpon Kontak</string>
+    <string name="nama1">Nama Kontak :</string>
+    <string name="alamat1">Alamat Kontak :</string>
+    <string name="telpon1">Telpon Kontak :</string>
+    <string name="required_field">required fields</string>
+    <string name="btn_submit">Submit</string>
+    <string name="detail_kontak">Detail Kontak</string>
+    <string name="edit_kontak">Edit Kontak</string>
+    <string name="back">Back</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="delete">Hapus</string>
+    <string name="update">Edit</string>
+    <string name="attention">Perhatian</string>
+    <string name="search">cari</string>
+    <string name="tanya">Apakah anda yakin menghapus ini?</string>
 </resources>
