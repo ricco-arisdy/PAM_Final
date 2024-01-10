@@ -14,8 +14,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import com.example.pam_final.R
+import com.example.pam_final.navigation.DestinasiNavigasi
 import com.example.pam_final.ui.DetailKontak
 import com.example.pam_final.ui.UIStateKontak
+import kotlinx.coroutines.launch
+
+object DestinasiKontak : DestinasiNavigasi {
+    override val route = "item_entry"
+    override val titleRes = "Entry Kontak"
+}
+
 
 
 @Composable
