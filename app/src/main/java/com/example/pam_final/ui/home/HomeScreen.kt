@@ -1,5 +1,6 @@
 package com.example.pam_final.ui.home
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Clear
@@ -23,6 +25,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TopAppBarDefaults
@@ -231,6 +234,11 @@ fun SearchBar(
     onSearchQueryChanged: (String) -> Unit,
     onSearchClear: () -> Unit
 ) {
+    Surface(
+        modifier = modifier,
+        shape = RoundedCornerShape(30.dp), // Adjust the radius as needed
+        border = BorderStroke(1.dp, Color.Transparent), // Set border to transparent
+    ){
     TextField(
         value = searchQuery,
         onValueChange = { onSearchQueryChanged(it) },
@@ -246,5 +254,5 @@ fun SearchBar(
             .fillMaxWidth()
             .padding(horizontal = 8.dp, vertical = 4.dp),
         textStyle = LocalTextStyle.current.copy(color = Color.Black),
-    )
+    )}
 }
