@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.pam_final"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.pam_final"
